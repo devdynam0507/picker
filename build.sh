@@ -12,3 +12,4 @@ echo "이제 이미지를 만들고 컨테이너를 띄웁니다."
 
 echo `docker build -t dynam0507/picker-fe:0.1 .`
 echo `docker login -u dynam0507 -p xxxx`
+echo `docker push dynam0507/picker-fe:0.1`
