@@ -2,10 +2,10 @@
 우린 Picker를 개발합니다!
 
 # Branches
-master - 배포 브랜치
-dev - 기능 병합 브랜치
-feature/{name} - 기능 개발 브랜치
-hotfix/{name} - 버그 수정 브랜치
+- master - 배포 브랜치
+- dev - 기능 병합 브랜치
+- feature/{name} - 기능 개발 브랜치
+- hotfix/{name} - 버그 수정 브랜치
 
 # 빌드, 배포
 현재 Jenkins를 이용하여 빌드, 배포가 자동으로 이루어 집니다.  
