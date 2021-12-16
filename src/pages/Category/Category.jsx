@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './Category.css';
 
 const Category = () => {
   const { category } = useParams();
-  console.log(category);
   const menu = {
     kr: [
       '닭볶음탕',
@@ -91,14 +91,58 @@ const Category = () => {
       '나시고랭',
     ],
   };
+  const [slot, setSlot] = useState({ ...menu[category], rolling: false });
+  const slotRef = useRef();
+  const menuList = {
+    menu: menu[category],
+  };
+  // console.log(slot);
+
+  const roll = () => {
+    setSlot({ rolling: true });
+
+    setTimeout(() => {
+      setSlot({ rolling: false });
+    }, 1000);
+
+    const selected = triggerSlotRotation(slotRef.current);
+    setSlot({ [0]: selected });
+  };
+
+  const triggerSlotRotation = (ref) => {
+    const setTop = (top) => {
+      ref.style.top = `${top}px`;
+    };
+    let options = ref.children;
+    let randomOption = Math.floor(Math.random() * menuList.menu.length);
+    let choosenOption = options[randomOption];
+    setTop(-choosenOption.offsetTop + 2);
+    console.log(randomOption);
+    return menuList.menu[randomOption];
+  };
 
   return (
     <main>
-      <ul>
-        {menu[category].map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
+      <section className='menu-section'>
+        <div className='slot-container'>
+          <div className='slot'>
+            <ul className='menu-list' ref={slotRef}>
+              {menuList.menu.map((item, i) => (
+                <li key={i} className='menu-item'>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className='btn-container'>
+          <button className='btn btn-picker' onClick={roll}>
+            Picker
+          </button>
+          <button className='btn'>다시 고를래요</button>
+        </div>
+      </section>
     </main>
   );
 };
