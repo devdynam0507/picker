@@ -22,6 +22,8 @@ COPY ./nginx.conf /etc/nginx/conf.d
 COPY ./ssl/certificate.crt /etc/nginx/certificate.crt
 COPY ./ssl/private.key /etc/nginx/private.key
 
+RUN cat /etc/nginx/certificate.crt /etc/nginx/ca_bundle.crt >> /etc/nginx/certificate.crt
+
 # 80,443 포트 오픈
 EXPOSE 80
 EXPOSE 443
