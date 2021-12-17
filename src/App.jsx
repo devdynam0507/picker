@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
-import Category from './pages/Category';
+import Category from './pages/Category/Category';
 
 function App() {
   return (
