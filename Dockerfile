@@ -12,15 +12,15 @@ RUN mkdir ./build
 
 # host pc의 현재경로의 build 폴더를 workdir 의 build 폴더로 복사
 ADD ./build ./build
-ADD ./ssl/ca_bundle.crt ./
-ADD ./ssl/certificate.crt ./
-ADD ./ssl/private.key ./
+ADD ./ssl/ca_bundle.crt /etc/nginx/ca_bundle.crt
 
 # nginx 의 default.conf 를 삭제
 RUN rm /etc/nginx/conf.d/default.conf
 
 # host pc 의 nginx.conf 를 아래 경로에 복사
 COPY ./nginx.conf /etc/nginx/conf.d
+COPY ./ssl/certificate.crt /etc/nginx/certificate.crt
+COPY ./ssl/private.key /etc/nginx/private.key
 
 # 80,443 포트 오픈
 EXPOSE 80
