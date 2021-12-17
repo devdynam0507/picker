@@ -1,12 +1,11 @@
 main{width:100%;height:100vh;display:block;background-color:#5d7bbd;text-align:center;font-weight:600;position:relative;}
 .wapper {min-width: 370px; padding: 0 20px; box-sizing: border-box; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);}
 
-.tit {font-size: 40px; color: #f7a2ae;}
+.tit {font-size: 40px; font-weight: 900; color: #f7a2ae;}
 .txt {font-size: 22px; margin-top: 20px;}
 .nemu {padding: 20px; margin-top: 26px; border-radius: 0.5em; font-size: 28px; background-color: #ffdca2;}
-.inner {padding-bottom: 20px;}
-.flex {height: 65px;line-height: 65px; background-color: #ffdca2;border-radius: 0.5em;; margin-top: 20px;}
-.flex:first-child {margin-top: 40px;}
+.inner {height: 70px; line-height: 70px; margin: 20px 0; background-color: #ffdca2;border-radius: 0.5em;}
+.inner:nth-child(4) {margin-top: 40px;}
 .item { width: 100px; font-size: 22px;display: inline-block; }
+.item:hover {background-color: #e6c48e;}
 .item a {display: inline-block; width: 100%; height: 100%;}
-.flex .item:hover{background-color: #caad7e;display: inline-block;}
