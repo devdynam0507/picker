@@ -1476,11 +1476,17 @@
   "version" "2.0.5"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "abbrev@1":
   "version" "1.1.1"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"abbrev@1":
+  "version" "1.1.1"
+
+>>>>>>> vintz
 "accepts@~1.3.4", "accepts@~1.3.5", "accepts@~1.3.7":
   "integrity" "sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA=="
   "resolved" "https://registry.npmjs.org/accepts/-/accepts-1.3.7.tgz"
@@ -1635,25 +1641,37 @@
     "default-require-extensions" "^1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "aproba@^1.0.3":
   "version" "1.2.0"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"aproba@^1.0.3":
+  "version" "1.2.0"
+
+>>>>>>> vintz
 "aproba@^1.1.1":
   "integrity" "sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw=="
   "resolved" "https://registry.npmjs.org/aproba/-/aproba-1.2.0.tgz"
   "version" "1.2.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "are-we-there-yet@~1.1.2":
   "version" "1.1.4"
   dependencies:
     "delegates" "^1.0.0"
     "readable-stream" "^2.0.6"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "argparse@^1.0.7":
   "integrity" "sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg=="
   "resolved" "https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz"
@@ -2669,11 +2687,17 @@
     "fsevents" "~2.3.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "chownr@^1.0.1":
   "version" "1.0.1"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"chownr@^1.0.1":
+  "version" "1.0.1"
+
+>>>>>>> vintz
 "chownr@^1.1.1":
   "integrity" "sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg=="
   "resolved" "https://registry.npmjs.org/chownr/-/chownr-1.1.4.tgz"
@@ -2904,11 +2928,17 @@
   "version" "1.2.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "console-control-strings@^1.0.0", "console-control-strings@~1.1.0":
   "version" "1.1.0"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"console-control-strings@^1.0.0", "console-control-strings@~1.1.0":
+  "version" "1.1.0"
+
+>>>>>>> vintz
 "constants-browserify@^1.0.0":
   "integrity" "sha1-wguW2MYXdIqvHBYCF2DNJ/y4y3U="
   "resolved" "https://registry.npmjs.org/constants-browserify/-/constants-browserify-1.0.0.tgz"
@@ -3304,13 +3334,19 @@
     "whatwg-url" "^7.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "debug@^2.1.2":
   "version" "2.6.9"
   dependencies:
     "ms" "2.0.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "debug@^2.2.0":
   "integrity" "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
@@ -3418,11 +3454,17 @@
     "regexp.prototype.flags" "^1.2.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "deep-extend@^0.5.1":
   "version" "0.5.1"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"deep-extend@^0.5.1":
+  "version" "0.5.1"
+
+>>>>>>> vintz
 "deep-is@~0.1.3":
   "integrity" "sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ=="
   "resolved" "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz"
@@ -3490,11 +3532,17 @@
   "version" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "delegates@^1.0.0":
   "version" "1.0.0"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"delegates@^1.0.0":
+  "version" "1.0.0"
+
+>>>>>>> vintz
 "depd@~1.1.2":
   "integrity" "sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak="
   "resolved" "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz"
@@ -3521,11 +3569,17 @@
     "repeating" "^2.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "detect-libc@^1.0.2":
   "version" "1.0.3"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"detect-libc@^1.0.2":
+  "version" "1.0.3"
+
+>>>>>>> vintz
 "detect-newline@^2.1.0":
   "integrity" "sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I="
   "resolved" "https://registry.npmjs.org/detect-newline/-/detect-newline-2.1.0.tgz"
@@ -4594,13 +4648,19 @@
     "universalify" "^0.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "fs-minipass@^1.2.5":
   "version" "1.2.5"
   dependencies:
     "minipass" "^2.2.1"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "fs-write-stream-atomic@^1.0.8":
   "integrity" "sha1-tH31NJPvkR33VzHnCp3tAYnbQMk="
   "resolved" "https://registry.npmjs.org/fs-write-stream-atomic/-/fs-write-stream-atomic-1.0.10.tgz"
@@ -4617,7 +4677,10 @@
   "version" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "fsevents@^1.2.3", "fsevents@1.2.4":
   "integrity" "sha512-z8H8/diyk76B7q5wg+Ud0+CqzcAF3mBBI/bA5ne5zrRUUIvNkJY//D3BqyH571KuAC4Nr7Rw7CjWX4r0y9DvNg=="
   "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-1.2.4.tgz"
@@ -4626,7 +4689,10 @@
     "nan" "^2.9.2"
     "node-pre-gyp" "^0.10.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "fsevents@^1.2.7":
   "integrity" "sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw=="
   "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-1.2.13.tgz"
@@ -4651,7 +4717,10 @@
   "version" "1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "gauge@~2.7.3":
   "version" "2.7.4"
   dependencies:
@@ -4664,7 +4733,10 @@
     "strip-ansi" "^3.0.1"
     "wide-align" "^1.1.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "gensync@^1.0.0-beta.2":
   "integrity" "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg=="
   "resolved" "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz"
@@ -4769,7 +4841,10 @@
     "path-is-absolute" "^1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "glob@^7.0.5":
   "version" "7.1.2"
   dependencies:
@@ -4780,7 +4855,10 @@
     "once" "^1.3.0"
     "path-is-absolute" "^1.0.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "global-modules@2.0.0":
   "integrity" "sha512-NGbfmJBp9x8IxyJSd1P+otYK8vonoJactOogrVfFRIAEY1ukil8RSKDz2Yo7wh1oihl51l/r6W4epkeKJHqL8A=="
   "resolved" "https://registry.npmjs.org/global-modules/-/global-modules-2.0.0.tgz"
@@ -4919,11 +4997,17 @@
     "has-symbols" "^1.0.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "has-unicode@^2.0.0":
   "version" "2.0.1"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"has-unicode@^2.0.0":
+  "version" "2.0.1"
+
+>>>>>>> vintz
 "has-value@^0.3.1":
   "integrity" "sha1-ex9YutpiyoJ+wKIHgCVlSEWZXh8="
   "resolved" "https://registry.npmjs.org/has-value/-/has-value-0.3.1.tgz"
@@ -5168,13 +5252,19 @@
     "safer-buffer" ">= 2.1.2 < 3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "iconv-lite@^0.4.4":
   "version" "0.4.21"
   dependencies:
     "safer-buffer" "^2.1.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "icss-replace-symbols@^1.1.0":
   "integrity" "sha1-Bupvg2ead0njhs/h/oEq5dsiPe0="
   "resolved" "https://registry.npmjs.org/icss-replace-symbols/-/icss-replace-symbols-1.1.0.tgz"
@@ -5205,13 +5295,19 @@
   "version" "0.1.5"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "ignore-walk@^3.0.1":
   "version" "3.0.1"
   dependencies:
     "minimatch" "^3.0.4"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "ignore@^3.3.5":
   "integrity" "sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug=="
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-3.3.10.tgz"
@@ -5312,11 +5408,17 @@
   "version" "1.3.8"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "ini@~1.3.0":
   "version" "1.3.5"
 
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"ini@~1.3.0":
+  "version" "1.3.5"
+
+>>>>>>> vintz
 "inquirer@^6.1.0":
   "integrity" "sha512-cntlB5ghuB0iuO65Ovoi8ogLHiWGs/5yNrtUcKjFhSSiVeAIVpD7koaSU9RM8mpXw5YDi9RdYXGQMaOURB7ycQ=="
   "resolved" "https://registry.npmjs.org/inquirer/-/inquirer-6.5.2.tgz"
@@ -6876,7 +6978,10 @@
   "version" "1.2.5"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "minimist@0.0.8":
   "version" "0.0.8"
 
@@ -6891,7 +6996,10 @@
   dependencies:
     "minipass" "^2.2.1"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "mississippi@^3.0.0":
   "integrity" "sha512-x471SsVjUtBRtcvd4BzKE9kFC+/2TeWgKCgw0bZcw1b9l2X3QX5vCWgF+KaZaYm87Ss//rHnWryupDrgLvmSkA=="
   "resolved" "https://registry.npmjs.org/mississippi/-/mississippi-3.0.0.tgz"
@@ -6925,13 +7033,21 @@
     "is-extendable" "^0.1.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "mkdirp@^0.5.0":
   "version" "0.5.1"
   dependencies:
     "minimist" "0.0.8"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "mkdirp@^0.5.1", "mkdirp@^0.5.5", "mkdirp@~0.5.0", "mkdirp@~0.5.1":
   "integrity" "sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ=="
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz"
@@ -6985,10 +7101,14 @@
   "version" "0.0.7"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "nan@^2.12.1":
 =======
 "nan@^2.12.1", "nan@^2.9.2":
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+"nan@^2.12.1", "nan@^2.9.2":
+>>>>>>> vintz
   "integrity" "sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ=="
   "resolved" "https://registry.npmjs.org/nan/-/nan-2.15.0.tgz"
   "version" "2.15.0"
@@ -7016,7 +7136,10 @@
   "version" "1.4.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "needle@^2.2.0":
   "version" "2.2.0"
   dependencies:
@@ -7024,7 +7147,10 @@
     "iconv-lite" "^0.4.4"
     "sax" "^1.2.4"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "negotiator@0.6.2":
   "integrity" "sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw=="
   "resolved" "https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz"
@@ -7098,7 +7224,10 @@
     "which" "^1.3.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "node-pre-gyp@^0.10.0":
   "version" "0.10.0"
   dependencies:
@@ -7113,7 +7242,10 @@
     "semver" "^5.3.0"
     "tar" "^4"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "node-releases@^1.1.3":
   "integrity" "sha512-rB1DUFUNAN4Gn9keO2K1efO35IDK7yKHCdCaIMvFO7yUYmmZYeDjnGKle26G4rwj+LKRQpjyUUvMkPglwGCYNQ=="
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-1.1.77.tgz"
@@ -7125,14 +7257,20 @@
   "version" "2.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "nopt@^4.0.1":
   "version" "4.0.1"
   dependencies:
     "abbrev" "1"
     "osenv" "^0.1.4"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "normalize-package-data@^2.3.2":
   "integrity" "sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA=="
   "resolved" "https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.5.0.tgz"
@@ -7173,7 +7311,10 @@
   "version" "3.3.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "npm-bundled@^1.0.1":
   "version" "1.0.3"
 
@@ -7183,7 +7324,10 @@
     "ignore-walk" "^3.0.1"
     "npm-bundled" "^1.0.1"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "npm-run-path@^2.0.0":
   "integrity" "sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8="
   "resolved" "https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz"
@@ -7192,7 +7336,10 @@
     "path-key" "^2.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> vintz
 "npmlog@^4.0.2":
   "version" "4.1.2"
   dependencies:
@@ -7201,7 +7348,10 @@
     "gauge" "~2.7.3"
     "set-blocking" "~2.0.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> vintz
 "nth-check@^1.0.2":
   "integrity" "sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg=="
   "resolved" "https://registry.npmjs.org/nth-check/-/nth-check-1.0.2.tgz"
@@ -7417,10 +7567,19 @@
     "mem" "^4.0.0"
 <<<<<<< HEAD
 
+"os-tmpdir@^1.0.0":
+  "version" "1.0.2"
+
 "os-tmpdir@^1.0.1", "os-tmpdir@~1.0.2":
   "integrity" "sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ="
   "resolved" "https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz"
   "version" "1.0.2"
+
+"osenv@^0.1.4":
+  "version" "0.1.5"
+  dependencies:
+    "os-homedir" "^1.0.0"
+    "os-tmpdir" "^1.0.0"
 
 "p-defer@^1.0.0":
   "integrity" "sha1-n26xgvbJqozXQwBKfU+WsZaw+ww="
@@ -9037,6 +9196,10 @@
     "unpipe" "1.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "rc@^1.1.7":
   "version" "1.2.7"
@@ -9046,7 +9209,11 @@
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "react-app-polyfill@^0.2.2":
   "integrity" "sha512-mAYn96B/nB6kWG87Ry70F4D4rsycU43VYTj3ZCbKP+SLJXwC0x6YCbwcICh3uW8/C9s1VgP197yx+w7SCWeDdQ=="
   "resolved" "https://registry.npmjs.org/react-app-polyfill/-/react-app-polyfill-0.2.2.tgz"
@@ -9233,6 +9400,10 @@
     "util-deprecate" "~1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "readable-stream@^2.0.6":
   "version" "2.3.6"
@@ -9245,7 +9416,11 @@
     "string_decoder" "~1.1.1"
     "util-deprecate" "~1.0.1"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "readable-stream@^3.0.6":
   "integrity" "sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA=="
   "resolved" "https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.0.tgz"
@@ -9764,11 +9939,19 @@
   "version" "2.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "set-blocking@~2.0.0":
   "version" "2.0.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "set-value@^2.0.0", "set-value@^2.0.1":
   "integrity" "sha512-JxHc1weCN68wRY0fhCoXpyK55m/XPHafOmK4UWD7m2CI14GMcFypt4w/0+NV5f/ZMby2F6S2wwA7fgynh9gWSw=="
   "resolved" "https://registry.npmjs.org/set-value/-/set-value-2.0.1.tgz"
@@ -10165,10 +10348,18 @@
     "strip-ansi" "^4.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "string-width@^1.0.1":
 =======
 "string-width@^1.0.1", "string-width@^1.0.2":
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+<<<<<<< .merge_file_5O7M47
+"string-width@^1.0.1":
+=======
+"string-width@^1.0.1", "string-width@^1.0.2":
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
   "integrity" "sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz"
   "version" "1.0.2"
@@ -10226,6 +10417,10 @@
   dependencies:
     "ansi-regex" "^2.0.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 
 "strip-ansi@^4.0.0":
   "integrity" "sha1-qEeQIusaw2iocTibY1JixQXuNo8="
@@ -10243,7 +10438,11 @@
   dependencies:
     "ansi-regex" "^3.0.0"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "strip-ansi@^5.0.0":
   "integrity" "sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA=="
   "resolved" "https://registry.npmjs.org/strip-ansi/-/strip-ansi-5.2.0.tgz"
@@ -10301,11 +10500,19 @@
   "version" "2.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "strip-json-comments@~2.0.1":
   "version" "2.0.1"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "style-loader@0.23.1":
   "integrity" "sha512-XK+uv9kWwhZMZ1y7mysB+zoihsEj4wneFWAS5qoiLwzW0WzSqMrrsIy+a3zkQJq0ipFtBpX5W3MqyRIBF/WFGg=="
   "resolved" "https://registry.npmjs.org/style-loader/-/style-loader-0.23.1.tgz"
@@ -10387,6 +10594,10 @@
   "version" "1.1.3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "tar@^4":
   "version" "4.4.1"
@@ -10399,7 +10610,11 @@
     "safe-buffer" "^5.1.1"
     "yallist" "^3.0.2"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "terser-webpack-plugin@^1.1.0", "terser-webpack-plugin@1.2.2":
   "integrity" "sha512-1DMkTk286BzmfylAvLXwpJrI7dWa5BnFmscV/2dCr8+c56egFcbaeFAl7+sujAjdmpLam21XRdhA4oifLyiWWg=="
   "resolved" "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-1.2.2.tgz"
@@ -11088,13 +11303,21 @@
     "isexe" "^2.0.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "wide-align@^1.1.0":
   "version" "1.1.2"
   dependencies:
     "string-width" "^1.0.2"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "word-wrap@~1.2.3":
   "integrity" "sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ=="
   "resolved" "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz"
@@ -11301,11 +11524,19 @@
   "version" "3.2.2"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5O7M47
+>>>>>>> vintz
 =======
 "yallist@^3.0.0":
   "version" "3.0.2"
 
+<<<<<<< HEAD
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
+=======
+>>>>>>> .merge_file_1GjLAC
+>>>>>>> vintz
 "yallist@^3.0.2":
   "integrity" "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
   "resolved" "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz"
