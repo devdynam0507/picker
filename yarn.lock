@@ -1477,6 +1477,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "abbrev@1":
   "version" "1.1.1"
@@ -1487,6 +1488,8 @@
   "version" "1.1.1"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "accepts@~1.3.4", "accepts@~1.3.5", "accepts@~1.3.7":
   "integrity" "sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU/fjRHyEp+PEfEPY0R3WCwAGVOtauxh1hOxNgIf5bv7dQpA=="
   "resolved" "https://registry.npmjs.org/accepts/-/accepts-1.3.7.tgz"
@@ -1642,6 +1645,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "aproba@^1.0.3":
   "version" "1.2.0"
@@ -1652,11 +1656,14 @@
   "version" "1.2.0"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "aproba@^1.1.1":
   "integrity" "sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw=="
   "resolved" "https://registry.npmjs.org/aproba/-/aproba-1.2.0.tgz"
   "version" "1.2.0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1672,6 +1679,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "argparse@^1.0.7":
   "integrity" "sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg=="
   "resolved" "https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz"
@@ -2688,6 +2697,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "chownr@^1.0.1":
   "version" "1.0.1"
@@ -2698,6 +2708,8 @@
   "version" "1.0.1"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "chownr@^1.1.1":
   "integrity" "sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg=="
   "resolved" "https://registry.npmjs.org/chownr/-/chownr-1.1.4.tgz"
@@ -2929,6 +2941,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "console-control-strings@^1.0.0", "console-control-strings@~1.1.0":
   "version" "1.1.0"
@@ -2939,6 +2952,8 @@
   "version" "1.1.0"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "constants-browserify@^1.0.0":
   "integrity" "sha1-wguW2MYXdIqvHBYCF2DNJ/y4y3U="
   "resolved" "https://registry.npmjs.org/constants-browserify/-/constants-browserify-1.0.0.tgz"
@@ -3335,6 +3350,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -3347,6 +3363,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "debug@^2.2.0":
   "integrity" "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA=="
   "resolved" "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
@@ -3455,6 +3473,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "deep-extend@^0.5.1":
   "version" "0.5.1"
@@ -3465,6 +3484,8 @@
   "version" "0.5.1"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "deep-is@~0.1.3":
   "integrity" "sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ=="
   "resolved" "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz"
@@ -3533,6 +3554,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "delegates@^1.0.0":
   "version" "1.0.0"
@@ -3543,6 +3565,8 @@
   "version" "1.0.0"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "depd@~1.1.2":
   "integrity" "sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak="
   "resolved" "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz"
@@ -3570,6 +3594,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "detect-libc@^1.0.2":
   "version" "1.0.3"
@@ -3580,6 +3605,8 @@
   "version" "1.0.3"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "detect-newline@^2.1.0":
   "integrity" "sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I="
   "resolved" "https://registry.npmjs.org/detect-newline/-/detect-newline-2.1.0.tgz"
@@ -4649,6 +4676,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -4661,6 +4689,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "fs-write-stream-atomic@^1.0.8":
   "integrity" "sha1-tH31NJPvkR33VzHnCp3tAYnbQMk="
   "resolved" "https://registry.npmjs.org/fs-write-stream-atomic/-/fs-write-stream-atomic-1.0.10.tgz"
@@ -4678,6 +4708,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -4693,6 +4724,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "fsevents@^1.2.7":
   "integrity" "sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw=="
   "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-1.2.13.tgz"
@@ -4718,6 +4751,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -4737,6 +4771,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "gensync@^1.0.0-beta.2":
   "integrity" "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg=="
   "resolved" "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz"
@@ -4842,6 +4878,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -4859,6 +4896,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "global-modules@2.0.0":
   "integrity" "sha512-NGbfmJBp9x8IxyJSd1P+otYK8vonoJactOogrVfFRIAEY1ukil8RSKDz2Yo7wh1oihl51l/r6W4epkeKJHqL8A=="
   "resolved" "https://registry.npmjs.org/global-modules/-/global-modules-2.0.0.tgz"
@@ -4998,6 +5037,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "has-unicode@^2.0.0":
   "version" "2.0.1"
@@ -5008,6 +5048,8 @@
   "version" "2.0.1"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "has-value@^0.3.1":
   "integrity" "sha1-ex9YutpiyoJ+wKIHgCVlSEWZXh8="
   "resolved" "https://registry.npmjs.org/has-value/-/has-value-0.3.1.tgz"
@@ -5253,6 +5295,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -5265,6 +5308,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "icss-replace-symbols@^1.1.0":
   "integrity" "sha1-Bupvg2ead0njhs/h/oEq5dsiPe0="
   "resolved" "https://registry.npmjs.org/icss-replace-symbols/-/icss-replace-symbols-1.1.0.tgz"
@@ -5296,6 +5341,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -5308,6 +5354,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "ignore@^3.3.5":
   "integrity" "sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug=="
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-3.3.10.tgz"
@@ -5409,6 +5457,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 "ini@~1.3.0":
   "version" "1.3.5"
@@ -5419,6 +5468,8 @@
   "version" "1.3.5"
 
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "inquirer@^6.1.0":
   "integrity" "sha512-cntlB5ghuB0iuO65Ovoi8ogLHiWGs/5yNrtUcKjFhSSiVeAIVpD7koaSU9RM8mpXw5YDi9RdYXGQMaOURB7ycQ=="
   "resolved" "https://registry.npmjs.org/inquirer/-/inquirer-6.5.2.tgz"
@@ -6979,6 +7030,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -7000,6 +7052,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "mississippi@^3.0.0":
   "integrity" "sha512-x471SsVjUtBRtcvd4BzKE9kFC+/2TeWgKCgw0bZcw1b9l2X3QX5vCWgF+KaZaYm87Ss//rHnWryupDrgLvmSkA=="
   "resolved" "https://registry.npmjs.org/mississippi/-/mississippi-3.0.0.tgz"
@@ -7034,6 +7088,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -7048,6 +7103,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "mkdirp@^0.5.1", "mkdirp@^0.5.5", "mkdirp@~0.5.0", "mkdirp@~0.5.1":
   "integrity" "sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ=="
   "resolved" "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz"
@@ -7102,6 +7159,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "nan@^2.12.1":
 =======
 "nan@^2.12.1", "nan@^2.9.2":
@@ -7109,6 +7167,9 @@
 =======
 "nan@^2.12.1", "nan@^2.9.2":
 >>>>>>> vintz
+=======
+"nan@^2.12.1":
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
   "integrity" "sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ=="
   "resolved" "https://registry.npmjs.org/nan/-/nan-2.15.0.tgz"
   "version" "2.15.0"
@@ -7137,6 +7198,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -7151,6 +7213,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "negotiator@0.6.2":
   "integrity" "sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw=="
   "resolved" "https://registry.npmjs.org/negotiator/-/negotiator-0.6.2.tgz"
@@ -7225,6 +7289,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -7246,6 +7311,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "node-releases@^1.1.3":
   "integrity" "sha512-rB1DUFUNAN4Gn9keO2K1efO35IDK7yKHCdCaIMvFO7yUYmmZYeDjnGKle26G4rwj+LKRQpjyUUvMkPglwGCYNQ=="
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-1.1.77.tgz"
@@ -7256,6 +7323,7 @@
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.1.tgz"
   "version" "2.0.1"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -7271,6 +7339,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "normalize-package-data@^2.3.2":
   "integrity" "sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA=="
   "resolved" "https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.5.0.tgz"
@@ -7312,6 +7382,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> vintz
@@ -7328,6 +7399,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "npm-run-path@^2.0.0":
   "integrity" "sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8="
   "resolved" "https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz"
@@ -7335,6 +7408,7 @@
   dependencies:
     "path-key" "^2.0.0"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -7352,6 +7426,8 @@
 >>>>>>> 187e507f87e533941723bf66b662f7e5a693ffcc
 =======
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "nth-check@^1.0.2":
   "integrity" "sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg=="
   "resolved" "https://registry.npmjs.org/nth-check/-/nth-check-1.0.2.tgz"
@@ -7567,19 +7643,10 @@
     "mem" "^4.0.0"
 <<<<<<< HEAD
 
-"os-tmpdir@^1.0.0":
-  "version" "1.0.2"
-
 "os-tmpdir@^1.0.1", "os-tmpdir@~1.0.2":
   "integrity" "sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ="
   "resolved" "https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz"
   "version" "1.0.2"
-
-"osenv@^0.1.4":
-  "version" "0.1.5"
-  dependencies:
-    "os-homedir" "^1.0.0"
-    "os-tmpdir" "^1.0.0"
 
 "p-defer@^1.0.0":
   "integrity" "sha1-n26xgvbJqozXQwBKfU+WsZaw+ww="
@@ -9197,6 +9264,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -9214,6 +9282,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "react-app-polyfill@^0.2.2":
   "integrity" "sha512-mAYn96B/nB6kWG87Ry70F4D4rsycU43VYTj3ZCbKP+SLJXwC0x6YCbwcICh3uW8/C9s1VgP197yx+w7SCWeDdQ=="
   "resolved" "https://registry.npmjs.org/react-app-polyfill/-/react-app-polyfill-0.2.2.tgz"
@@ -9401,6 +9471,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -9421,6 +9492,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "readable-stream@^3.0.6":
   "integrity" "sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA=="
   "resolved" "https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.0.tgz"
@@ -9940,6 +10013,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -9952,6 +10026,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "set-value@^2.0.0", "set-value@^2.0.1":
   "integrity" "sha512-JxHc1weCN68wRY0fhCoXpyK55m/XPHafOmK4UWD7m2CI14GMcFypt4w/0+NV5f/ZMby2F6S2wwA7fgynh9gWSw=="
   "resolved" "https://registry.npmjs.org/set-value/-/set-value-2.0.1.tgz"
@@ -10349,6 +10425,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "string-width@^1.0.1":
 =======
 "string-width@^1.0.1", "string-width@^1.0.2":
@@ -10360,6 +10437,9 @@
 "string-width@^1.0.1", "string-width@^1.0.2":
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+"string-width@^1.0.1":
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
   "integrity" "sha1-EYvfW4zcUaKn5w0hHgfisLmxB9M="
   "resolved" "https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz"
   "version" "1.0.2"
@@ -10418,9 +10498,12 @@
     "ansi-regex" "^2.0.0"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 
 "strip-ansi@^4.0.0":
   "integrity" "sha1-qEeQIusaw2iocTibY1JixQXuNo8="
@@ -10429,6 +10512,7 @@
   dependencies:
     "ansi-regex" "^3.0.0"
 
+<<<<<<< HEAD
 =======
 
 "strip-ansi@^4.0.0":
@@ -10443,6 +10527,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "strip-ansi@^5.0.0":
   "integrity" "sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA=="
   "resolved" "https://registry.npmjs.org/strip-ansi/-/strip-ansi-5.2.0.tgz"
@@ -10501,6 +10587,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -10513,6 +10600,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "style-loader@0.23.1":
   "integrity" "sha512-XK+uv9kWwhZMZ1y7mysB+zoihsEj4wneFWAS5qoiLwzW0WzSqMrrsIy+a3zkQJq0ipFtBpX5W3MqyRIBF/WFGg=="
   "resolved" "https://registry.npmjs.org/style-loader/-/style-loader-0.23.1.tgz"
@@ -10595,6 +10684,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -10615,6 +10705,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "terser-webpack-plugin@^1.1.0", "terser-webpack-plugin@1.2.2":
   "integrity" "sha512-1DMkTk286BzmfylAvLXwpJrI7dWa5BnFmscV/2dCr8+c56egFcbaeFAl7+sujAjdmpLam21XRdhA4oifLyiWWg=="
   "resolved" "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-1.2.2.tgz"
@@ -11304,6 +11396,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -11318,6 +11411,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "word-wrap@~1.2.3":
   "integrity" "sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ=="
   "resolved" "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz"
@@ -11525,6 +11620,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5O7M47
 >>>>>>> vintz
@@ -11537,6 +11633,8 @@
 =======
 >>>>>>> .merge_file_1GjLAC
 >>>>>>> vintz
+=======
+>>>>>>> parent of 93d92a4 (lock 파일 병합 충돌, PR 템플릿)
 "yallist@^3.0.2":
   "integrity" "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
   "resolved" "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz"
