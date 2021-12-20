@@ -12,17 +12,23 @@ const Home = () => {
     axios.get('http://api.picker.run/count').then((res) => {
       setNumbVisit(res.data.count);
     });
-    axios.get('http://api.picker.run/picker?amountOfData=6').then((res) => {
-      console.log(res.data);
-      setCurList(res.data);
-    });
+    axios
+      .get('http://api.picker.run/picker?amountOfData=6')
+      .then((res) => {
+        console.log(res.data);
+        setCurList(res.data);
+      });
   }, []);
   const getLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         function (position) {
-          console.log(position.coords.latitude + ' ' + position.coords.longitude);
-          setLoc(position.coords.latitude + ' ' + position.coords.longitude);
+          console.log(
+            position.coords.latitude + ' ' + position.coords.longitude
+          );
+          setLoc(
+            position.coords.latitude + ' ' + position.coords.longitude
+          );
         },
         function (error) {
           console.error(error);
@@ -59,7 +65,9 @@ const Home = () => {
       <div className='wapper'>
         {/* {curList.map((el) => el.local + '/' + el.food + ' ')} */}
         <h1 className='tit'>Picker</h1>
-        <p className='txt'>Picker가 {numbVisit}명의 고민을 해결해줬어요.</p>
+        <p className='txt'>
+          Picker가 {numbVisit}명의 고민을 해결해줬어요.
+        </p>
         <p className='txt'>원하는 고민거리를 Picker 해드릴게요.</p>
         <p className='nemu'>메뉴 Picker</p>
         <ul className='inner'>
@@ -103,11 +111,7 @@ const Home = () => {
             </Link>
           </li>
           <li className='item'>
-            <Link
-              to='/midnightsnack
-'
-              state={{ loc: loc, theme: '야식' }}
-            >
+            <Link to='/midnightsnack' state={{ loc: loc, theme: '야식' }}>
               야식
             </Link>
           </li>
