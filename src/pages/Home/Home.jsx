@@ -111,11 +111,7 @@ const Home = () => {
             </Link>
           </li>
           <li className='item'>
-            <Link
-              to='/midnightsnack
-'
-              state={{ loc: loc, theme: '야식' }}
-            >
+            <Link to='/midnightsnack' state={{ loc: loc, theme: '야식' }}>
               야식
             </Link>
           </li>
