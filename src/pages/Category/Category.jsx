@@ -38,8 +38,7 @@ const Category = () => {
     const form = new FormData();
     form.append(
       'local',
-      selected.address_name.split(' ')[0] +
-        selected.address_name.split(' ')[1]
+      selected.address_name.split(' ')[0] + selected.address_name.split(' ')[1]
     );
     form.append('food', selected.category_name.split('> ').reverse()[0]);
 
@@ -102,9 +101,7 @@ const Category = () => {
             <ul className='menu-list' ref={slotRef}>
               {menus.map((el, i) => (
                 <li key={i} className='menu-item'>
-                  {rouletteMessage
-                    ? el.place_name
-                    : '---룰렛을 돌려주세요---'}
+                  {rouletteMessage ? el.place_name : '---룰렛을 돌려주세요---'}
                 </li>
               ))}
             </ul>
