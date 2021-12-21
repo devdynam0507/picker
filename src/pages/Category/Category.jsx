@@ -36,7 +36,10 @@ const Category = () => {
     setResult(selected);
     console.log(selected);
     const form = new FormData();
-    form.append('local', selected.address_name.split(' ')[0] + selected.address_name.split(' ')[1]);
+    form.append(
+      'local',
+      selected.address_name.split(' ')[0] + selected.address_name.split(' ')[1]
+    );
     form.append('food', selected.category_name.split('> ').reverse()[0]);
 
     axios
@@ -73,7 +76,13 @@ const Category = () => {
       alert('위치정보를 다시 받아와주세요');
       window.location.assign('/');
     }
-    places.keywordSearch(location.state.theme, callback, { location: new kakao.maps.LatLng(curLoc.loc.split(' ')[0], curLoc.loc.split(' ')[1]), page: 1 });
+    places.keywordSearch(location.state.theme, callback, {
+      location: new kakao.maps.LatLng(
+        curLoc.loc.split(' ')[0],
+        curLoc.loc.split(' ')[1]
+      ),
+      page: 1,
+    });
   }, []);
 
   const navHandler = () => {
@@ -99,7 +108,15 @@ const Category = () => {
           </div>
         </div>
         <div className='hide' ref={pickerRef}>
-          {result ? <MapContainer curLoc={curLoc} address={result.address_name} placename={result.place_name} /> : ''}
+          {result ? (
+            <MapContainer
+              curLoc={curLoc}
+              address={result.address_name}
+              placename={result.place_name}
+            />
+          ) : (
+            ''
+          )}
         </div>
         <div className='btn-container'>
           <button className='btn btn-picker' onClick={roll}>

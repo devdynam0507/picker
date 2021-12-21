@@ -15,12 +15,6 @@ master 브랜치에 병합 시 trigger 됩니다.
 그러므로 master 브랜치에 병합하실 땐 구현하신 기능을 꼼꼼히 확인해주세요!
 
 # 개발 서버
-http://picker.run 
+http://3.38.72.94  
 master 브랜치에 병합하시고 1~2분 정도 기다리시면 변경사항이 적용 됩니다.  
 만약 변경사항이 적용되지 않는다면 감자에게 말해주세요!!
-
-# API Endpoint
-http://api.picker.run
-
-### API Document
-https://www.postman.com/red-meadow-28471/workspace/picker/collection/16900397-b07ab1eb-fc78-42fd-aab8-16bbabd05a23
