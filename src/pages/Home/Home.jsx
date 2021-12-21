@@ -14,10 +14,12 @@ const Home = () => {
     axios.get('http://api.picker.run/count').then((res) => {
       setNumbVisit(res.data.count);
     });
-    axios.get('http://api.picker.run/picker?amountOfData=6').then((res) => {
-      console.log(res.data);
-      setCurList(res.data);
-    });
+    axios
+      .get('http://api.picker.run/picker?amountOfData=6')
+      .then((res) => {
+        console.log(res.data);
+        setCurList(res.data);
+      });
   }, []);
 
   const getLocation = () => {
@@ -76,10 +78,18 @@ const Home = () => {
       {!isLoading && (
         <div className='wapper'>
           {/* {curList.map((el) => el.local + '/' + el.food + ' ')} */}
-          <h1 className='tit'>Picker</h1>
-          <p className='txt'>Picker가 {numbVisit}명의 고민을 해결해줬어요.</p>
-          <p className='txt'>원하는 고민거리를 Picker 해드릴게요.</p>
-          <p className='nemu'>메뉴 Picker</p>
+          <img
+            className='home-bg'
+            src='images/picker.png'
+            alt='타코, 햄버거, 도넛'
+          />
+          <p className='txt'>
+            Picker가 <span>{numbVisit}</span>명의 고민을 해결해줬어요.
+          </p>
+          <p className='txt'>
+            원하는 고민거리를 <strong>Picker</strong> 해드릴게요.
+          </p>
+          <p className='menu'>메뉴 Picker</p>
           <ul className='inner'>
             <li className='item'>
               <Link to='/kr' state={{ loc: loc, theme: '한식' }}>
@@ -121,7 +131,10 @@ const Home = () => {
               </Link>
             </li>
             <li className='item'>
-              <Link to='/midnightsnack' state={{ loc: loc, theme: '야식' }}>
+              <Link
+                to='/midnightsnack'
+                state={{ loc: loc, theme: '야식' }}
+              >
                 야식
               </Link>
             </li>
