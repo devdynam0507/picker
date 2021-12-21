@@ -76,9 +76,17 @@ const Home = () => {
       {!isLoading && (
         <div className='wapper'>
           {/* {curList.map((el) => el.local + '/' + el.food + ' ')} */}
-          <h1 className='tit'>Picker</h1>
-          <p className='txt'>Picker가 {numbVisit}명의 고민을 해결해줬어요.</p>
-          <p className='txt'>원하는 고민거리를 Picker 해드릴게요.</p>
+          <img
+            className='home-bg'
+            src='images/picker.png'
+            alt='타코, 햄버거, 도넛'
+          />
+          <p className='txt'>
+            Picker가 <span>{numbVisit}</span>명의 고민을 해결해줬어요.
+          </p>
+          <p className='txt'>
+            원하는 고민거리를 <strong>Picker</strong> 해드릴게요.
+          </p>
           <p className='nemu'>메뉴 Picker</p>
           <ul className='inner'>
             <li className='item'>
