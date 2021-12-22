@@ -5,20 +5,22 @@ import MapContainer from '../../Components/MapContainer/MapConTainer';
 import './Category.css';
 
 const { kakao } = window;
-const Category = () => {
+const Category = (props) => {
   const [menus, setMenus] = useState([]);
   const [slot, setSlot] = useState({ ...menus, rolling: false });
   const location = useLocation();
   const slotRef = useRef();
-  const pickerRef = useRef();
+  const mapRef = useRef();
+  const imgRef = useRef();
+  const drawInRef = useRef();
   const [curLoc, setCurLoc] = useState(location.state);
   const [result, setResult] = useState('');
   const [rouletteMessage, setRouletteMessage] = useState(0);
-
   const rouletteHandler = () => {
     setRouletteMessage(1);
   };
-  console.log(curLoc);
+  const theme = curLoc.theme;
+
   const roll = () => {
     rouletteHandler();
     setSlot({ rolling: true });
@@ -27,9 +29,9 @@ const Category = () => {
       setSlot({ rolling: false });
     }, 1000);
 
-    setTimeout(() => {
-      pickerRef.current.classList.add('on');
-    }, 500);
+    mapRef.current.classList.add('show');
+    imgRef.current.classList.add('hide');
+    drawInRef.current.classList.add('none');
 
     const selected = triggerSlotRotation(slotRef.current);
     setSlot({ [0]: selected });
@@ -101,29 +103,41 @@ const Category = () => {
             <ul className='menu-list' ref={slotRef}>
               {menus.map((el, i) => (
                 <li key={i} className='menu-item'>
-                  {rouletteMessage ? el.place_name : '---룰렛을 돌려주세요---'}
+                  {rouletteMessage ? (
+                    el.place_name
+                  ) : (
+                    <div className='food'>
+                      <i class='fas fa-pizza-slice'></i>
+                      <i class='fas fa-hamburger'></i>
+                      <i class='fas fa-drumstick-bite'></i>
+                      <i class='fas fa-utensils'></i>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <div className='hide' ref={pickerRef}>
-          {result ? (
+        <div className='map-container'>
+          <div className='map' ref={mapRef}>
             <MapContainer
               curLoc={curLoc}
               address={result.address_name}
               placename={result.place_name}
             />
-          ) : (
-            ''
-          )}
+          </div>
+          <img ref={imgRef} src='/images/restaurant.png' alt='레스토랑' />
         </div>
         <div className='btn-container'>
+          <span className='draw-in' ref={drawInRef}>
+            내 주변의 {theme} 맛집 찾기
+            <i class='far fa-hand-point-down'></i>
+          </span>
           <button className='btn btn-picker' onClick={roll}>
             Picker
           </button>
           <button className='btn' onClick={navHandler}>
-            카카오 길찾기 바로가기
+            카카오맵으로 길찾기
           </button>
         </div>
       </section>
