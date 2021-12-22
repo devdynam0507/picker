@@ -73,6 +73,7 @@ main {
 
 .home-bg {
   padding: 1em;
+  margin-inline: auto;
 }
 
 .txt {
