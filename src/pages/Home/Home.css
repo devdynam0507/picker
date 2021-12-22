@@ -61,8 +61,8 @@ main {
   }
 }
 
-.wapper {
-  min-width: 370px;
+.wrapper {
+  width: min(90%, 40rem);
   padding: 0 1.25rem;
   box-sizing: border-box;
   position: absolute;
