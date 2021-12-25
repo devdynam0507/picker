@@ -36,12 +36,9 @@ const Category = (props) => {
     const selected = triggerSlotRotation(slotRef.current);
     setSlot({ [0]: selected });
     setResult(selected);
-    console.log(selected);
+    // console.log(selected);
     const form = new FormData();
-    form.append(
-      'local',
-      selected.address_name.split(' ')[0] + selected.address_name.split(' ')[1]
-    );
+    form.append('local', selected.address_name.split(' ')[0] + selected.address_name.split(' ')[1]);
     form.append('food', selected.category_name.split('> ').reverse()[0]);
 
     axios
@@ -73,16 +70,13 @@ const Category = (props) => {
     }
   };
   useEffect(() => {
-    console.log(location.state.loc);
+    // console.log(location.state.loc);
     if (!location.state.loc) {
       alert('위치정보를 다시 받아와주세요');
       window.location.assign('/');
     }
     places.keywordSearch(location.state.theme, callback, {
-      location: new kakao.maps.LatLng(
-        curLoc.loc.split(' ')[0],
-        curLoc.loc.split(' ')[1]
-      ),
+      location: new kakao.maps.LatLng(curLoc.loc.split(' ')[0], curLoc.loc.split(' ')[1]),
       page: 1,
     });
   }, []);
@@ -107,10 +101,10 @@ const Category = (props) => {
                     el.place_name
                   ) : (
                     <div className='food'>
-                      <i class='fas fa-pizza-slice'></i>
-                      <i class='fas fa-hamburger'></i>
-                      <i class='fas fa-drumstick-bite'></i>
-                      <i class='fas fa-utensils'></i>
+                      <i className='fas fa-pizza-slice'></i>
+                      <i className='fas fa-hamburger'></i>
+                      <i className='fas fa-drumstick-bite'></i>
+                      <i className='fas fa-utensils'></i>
                     </div>
                   )}
                 </li>
@@ -120,18 +114,14 @@ const Category = (props) => {
         </div>
         <div className='map-container'>
           <div className='map' ref={mapRef}>
-            <MapContainer
-              curLoc={curLoc}
-              address={result.address_name}
-              placename={result.place_name}
-            />
+            <MapContainer curLoc={curLoc} address={result.address_name} placename={result.place_name} />
           </div>
           <img ref={imgRef} src='/images/restaurant.png' alt='레스토랑' />
         </div>
         <div className='btn-container'>
           <span className='draw-in' ref={drawInRef}>
             내 주변의 {theme} 맛집 찾기
-            <i class='far fa-hand-point-down'></i>
+            <i className='far fa-hand-point-down'></i>
           </span>
           <button className='btn btn-picker' onClick={roll}>
             Picker
