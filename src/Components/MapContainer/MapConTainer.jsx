@@ -4,7 +4,7 @@ const { kakao } = window;
 
 const MapContainer = ({ curLoc, address, placename }) => {
   useEffect(() => {
-    console.log(curLoc, address, placename);
+    // console.log(curLoc, address, placename);
     const container = document.getElementById('myMap');
     const options = {
       center: new kakao.maps.LatLng(curLoc.loc.split(' ')[0], curLoc.loc.split(' ')[1]),
