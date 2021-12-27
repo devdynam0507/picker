@@ -129,6 +129,9 @@ const Category = (props) => {
           <button className='btn' onClick={navHandler}>
             카카오맵으로 길찾기
           </button>
+          <button className='btn' onClick={() => window.location.assign('/')}>
+            메뉴 다시 고르기
+          </button>
         </div>
       </section>
     </main>
