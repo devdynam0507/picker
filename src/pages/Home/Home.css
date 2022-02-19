@@ -1,0 +1,228 @@
+:root {
+  --loader-size: 0.75rem;
+}
+
+/* 이미지 작업을 좀 더 쉽게 해준다 */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
+.notify-wrap {
+  position: relative;
+  background: #dcdddd;
+}
+
+.notify-wrap-inner {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin: 0 30px;
+  background: #dcdddd;
+  text-align: center;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notify-scroll {
+  display: inline-block;
+  animation: text-scroll 1.2s linear infinite;
+}
+
+@keyframes text-scroll {
+  from {
+    transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    -o-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+  }
+  to {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+  }
+}
+
+.wrapper {
+  width: min(90%, 40rem);
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-bg {
+  padding: 1em;
+  margin-inline: auto;
+}
+
+.txt {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: #e4442a;
+}
+
+.txt span {
+  color: #000;
+}
+
+.txt strong {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.menu {
+  padding: 20px;
+  margin-top: 26px;
+  border-radius: 0.5em;
+  font-size: 1.25rem;
+  background-color: #fd8700;
+  color: #fff;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fd8700;
+
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 0.5em;
+  margin-top: 0.875rem;
+}
+
+.inner:nth-child(4) {
+  margin-top: 40px;
+}
+
+.item {
+  width: 100%;
+  transition: transform 200ms ease;
+}
+
+.item a {
+  display: block;
+  padding: 0.875em;
+}
+
+/* PC화면 일 때만(hover 기능 활성화 시) 아래 속성 적용 */
+@media (hover) {
+  .item:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Loader */
+.loader-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: var(--loader-size);
+  height: var(--loader-size);
+  position: relative;
+  margin-right: 1.5rem;
+}
+
+.loader .ball {
+  position: absolute;
+  width: var(--loader-size);
+  height: var(--loader-size);
+  border-radius: 50%;
+}
+
+.loader .upper {
+  top: calc(var(--loader-size) * -1);
+  left: 0;
+  background-color: #2da2ff;
+  animation: upper 1.2s infinite;
+}
+
+@keyframes upper {
+  50%,
+  100% {
+    transform: translateY(calc(var(--loader-size) * 2));
+  }
+}
+
+.loader .right {
+  right: calc(var(--loader-size) * -1);
+  bottom: 0;
+  background-color: #ff337a;
+  animation: right 1.2s infinite;
+}
+
+@keyframes right {
+  50%,
+  100% {
+    transform: translateX(calc(var(--loader-size) * -2));
+  }
+}
+
+.loader .lower {
+  bottom: calc(var(--loader-size) * -1);
+  right: 0;
+  background-color: #ffff00;
+  animation: lower 1.2s infinite;
+}
+
+@keyframes lower {
+  50%,
+  100% {
+    transform: translateY(calc(var(--loader-size) * -2));
+  }
+}
+
+.loader .left {
+  left: calc(var(--loader-size) * -1);
+  right: 0;
+  background-color: #00ff00;
+  animation: left 1.2s infinite;
+}
+
+@keyframes left {
+  50%,
+  100% {
+    transform: translateX(calc(var(--loader-size) * 2));
+  }
+}
+
+.loader-text {
+  color: #e4442a;
+  animation: updown 1.2s infinite;
+}
+
+@keyframes updown {
+  50% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
