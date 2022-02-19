@@ -12,7 +12,17 @@ const Home = () => {
   const [randomPick, setRandomPick] = useState({});
 
   useEffect(() => {
-    const listOfTheme = [{ kr: '한식' }, { jp: '일식' }, { cn: '중식' }, { meat: '고기' }, { chicken: '치킨' }, { pizza: '피자' }, { snack: '분식' }, { midnightsnack: '야식' }, { ramen: '라면' }];
+    const listOfTheme = [
+      { kr: '한식' },
+      { jp: '일식' },
+      { cn: '중식' },
+      { meat: '고기' },
+      { chicken: '치킨' },
+      { pizza: '피자' },
+      { snack: '분식' },
+      { midnightsnack: '야식' },
+      { ramen: '라면' },
+    ];
     setRandomPick(listOfTheme[Math.floor(Math.random() * 9)]);
   }, []);
 
@@ -30,7 +40,8 @@ const Home = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          const currentPosition = position.coords.latitude + ' ' + position.coords.longitude;
+          const currentPosition =
+            position.coords.latitude + ' ' + position.coords.longitude;
           // console.log(currentPosition);
           setLoading(false);
           setLoc(currentPosition);
@@ -66,7 +77,11 @@ const Home = () => {
       )}
       {!isLoading && (
         <div className='wrapper'>
-          <img className='home-bg' src='images/picker.png' alt='타코, 햄버거, 도넛' />
+          <img
+            className='home-bg'
+            src='images/picker.png'
+            alt='타코, 햄버거, 도넛'
+          />
           <p className='txt'>
             Picker가 <span>{numbVisit}</span>명의 고민을 해결해줬어요.
           </p>
@@ -74,7 +89,10 @@ const Home = () => {
             원하는 고민거리를 <strong>Picker</strong> 해드릴게요.
           </p>
           <p className='menu'>
-            <Link to={`/${Object.keys(randomPick)[0]}`} state={{ loc: loc, theme: Object.values(randomPick)[0] }}>
+            <Link
+              to={`/${Object.keys(randomPick)[0]}`}
+              state={{ loc: loc, theme: Object.values(randomPick)[0] }}
+            >
               랜덤 메뉴 Pick
             </Link>
           </p>
