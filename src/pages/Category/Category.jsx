@@ -1,8 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
-import MapContainer from '../../Components/MapContainer/MapConTainer';
+import Map from '../../Components/Map';
 import './Category.css';
+import Main from '../../Components/Main';
+import Button from '../../Components/Button';
 
 const { kakao } = window;
 const Category = (props) => {
@@ -38,7 +40,10 @@ const Category = (props) => {
     setResult(selected);
     // console.log(selected);
     const form = new FormData();
-    form.append('local', selected.address_name.split(' ')[0] + selected.address_name.split(' ')[1]);
+    form.append(
+      'local',
+      selected.address_name.split(' ')[0] + selected.address_name.split(' ')[1]
+    );
     form.append('food', selected.category_name.split('> ').reverse()[0]);
 
     axios
@@ -76,7 +81,10 @@ const Category = (props) => {
       window.location.assign('/');
     }
     places.keywordSearch(location.state.theme, callback, {
-      location: new kakao.maps.LatLng(curLoc.loc.split(' ')[0], curLoc.loc.split(' ')[1]),
+      location: new kakao.maps.LatLng(
+        curLoc.loc.split(' ')[0],
+        curLoc.loc.split(' ')[1]
+      ),
       page: 1,
     });
   }, []);
@@ -91,47 +99,22 @@ const Category = (props) => {
 
   return (
     <main>
-      <section className='menu-section'>
-        <div className='slot-container'>
-          <div className='slot'>
-            <ul className='menu-list' ref={slotRef}>
-              {menus.map((el, i) => (
-                <li key={i} className='menu-item'>
-                  {rouletteMessage ? (
-                    el.place_name
-                  ) : (
-                    <div className='food'>
-                      <i className='fas fa-pizza-slice'></i>
-                      <i className='fas fa-hamburger'></i>
-                      <i className='fas fa-drumstick-bite'></i>
-                      <i className='fas fa-utensils'></i>
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
+      <section className='h-full flex flex-col bg-neutral-100 px-6'>
+        <div className="basis-1/4 bg-[url('../public/img/top-bg1.png')] bg-cover flex justify-center items-center bg-center">
+          <img className='w-40' src='img/sub-menu2.png' alt='picker 로고' />
         </div>
-        <div className='map-container'>
-          <div className='map' ref={mapRef}>
-            <MapContainer curLoc={curLoc} address={result.address_name} placename={result.place_name} />
-          </div>
-          <img ref={imgRef} src='/images/restaurant.png' alt='레스토랑' />
-        </div>
-        <div className='btn-container'>
-          <span className='draw-in' ref={drawInRef}>
-            내 주변의 {theme} 맛집 찾기
-            <i className='far fa-hand-point-down'></i>
-          </span>
-          <button className='btn btn-picker' onClick={roll}>
-            Picker
-          </button>
-          <button className='btn' onClick={navHandler}>
-            카카오맵으로 길찾기
-          </button>
-          <button className='btn' onClick={() => window.location.assign('/')}>
-            메뉴 다시 고르기
-          </button>
+        <Main theme={theme} />
+        <div className='basis-1/4'>
+          <Button
+            text={`내 주변 ${theme}집 찾기`}
+            onClick={navHandler}
+            isImg={true}
+          />
+          <Button text='카카오맵으로 길 찾기' onClick={navHandler} />
+          <Button
+            text='메뉴 다시 고르기'
+            onClick={() => window.location.assign('/')}
+          />
         </div>
       </section>
     </main>
