@@ -10,6 +10,23 @@ const Home = () => {
   const [curList, setCurList] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [randomPick, setRandomPick] = useState({});
+  const textArr = ['NOW', 'OUR', 'DO', 'START', 'YOUR'];
+  const [text, setText] = useState(textArr[0]);
+  let idx = 0;
+  const getText = () => {
+    if (idx === 5) {
+      idx = 0;
+    }
+    setText(textArr[idx]);
+    idx++;
+  };
+
+  useEffect(() => {
+    setInterval(getText, 1000);
+    if (!isLoading) {
+      clearInterval(getText);
+    }
+  }, []);
 
   useEffect(() => {
     const listOfTheme = [
@@ -65,89 +82,104 @@ const Home = () => {
   return (
     <main>
       {isLoading && (
-        <section className='loader-section'>
-          <div className='loader'>
-            <div className='upper ball'></div>
-            <div className='right ball'></div>
-            <div className='lower ball'></div>
-            <div className='left ball'></div>
+        <section className='h-full bg-picker-orange flex flex-col'>
+          {/* TOP */}
+          <div className="basis-3/4 flex flex-col items-center justify-center bg-[url('../public/img/intro-circle.png')] bg-contain bg-bottom">
+            <div className='basis-1/2 flex w-full justify-center items-end'>
+              <p className='text-white text-5xl'>{text}</p>
+            </div>
+            <div className='basis-1/2'>
+              <img className='w-44' src='img/logo-fff.png' alt='picker 로고' />
+            </div>
           </div>
-          <p className='loader-text'>지도를 불러오는 중이에요..</p>
+
+          {/* BOTTOM */}
+          <div className='basis-1/4 text-xl tall:text-2xl pb-9'>
+            <p className='text-white max-w-xs m-auto'>
+              Picker가 <span className='font-extrabold'>{numbVisit}</span>명의
+              고민을 해결해줬어요.
+            </p>
+            <p className='text-white'>
+              원하는 고민거리를 <span className='font-extrabold'>Picker</span>{' '}
+              해드릴게요!
+            </p>
+          </div>
         </section>
       )}
       {!isLoading && (
-        <div className='wrapper'>
-          <img
-            className='home-bg'
-            src='images/picker.png'
-            alt='타코, 햄버거, 도넛'
-          />
-          <p className='txt'>
-            Picker가 <span>{numbVisit}</span>명의 고민을 해결해줬어요.
-          </p>
-          <p className='txt'>
-            원하는 고민거리를 <strong>Picker</strong> 해드릴게요.
-          </p>
-          <p className='menu'>
+        <section className='h-full flex flex-col bg-neutral-100 px-6'>
+          <div className="basis-1/4 bg-[url('../public/img/top-bg1.png')] bg-cover flex justify-center items-center bg-center">
+            <img className='w-40' src='img/sub-menu1.png' alt='picker 로고' />
+          </div>
+          <div className='basis-2/4'>
+            <ul className='flex gap-3 h-full flex-wrap'>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/kr' state={{ loc: loc, theme: '한식' }}>
+                  <p className='text-4xl'>🍲</p>
+                  한식
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/cn' state={{ loc: loc, theme: '중식' }}>
+                  <p className=' text-4xl'>🥡</p>
+                  중식
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/jp' state={{ loc: loc, theme: '일식' }}>
+                  <p className=' text-4xl'>🍣</p>
+                  일식
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/meat' state={{ loc: loc, theme: '고기' }}>
+                  <p className=' text-4xl'>🥩</p>
+                  고기
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/chicken' state={{ loc: loc, theme: '치킨' }}>
+                  <p className=' text-4xl'>🍗</p>
+                  치킨
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/pizza' state={{ loc: loc, theme: '피자' }}>
+                  <p className=' text-4xl'>🍕</p>
+                  피자
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/snack' state={{ loc: loc, theme: '분식' }}>
+                  <p className=' text-4xl'>🥟</p>
+                  분식
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/midnightsnack' state={{ loc: loc, theme: '야식' }}>
+                  <p className=' text-4xl'>🍔</p>
+                  야식
+                </Link>
+              </li>
+              <li className=' bg-white flex-30 justify-center items-center flex'>
+                <Link to='/ramen' state={{ loc: loc, theme: '라면' }}>
+                  <p className=' text-4xl'>🍜</p>
+                  라면
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className='basis-1/4'>
             <Link
               to={`/${Object.keys(randomPick)[0]}`}
               state={{ loc: loc, theme: Object.values(randomPick)[0] }}
+              className='bg-picker-yellow p-5 mt-6 rounded-lg text-lg flex justify-center items-center w-full'
             >
-              랜덤 메뉴 Pick
+              메뉴 랜덤{' '}
+              <span className="bg-[url('../public/img/logo-1E.png')] w-14 h-5 bg-contain bg-no-repeat align-top inline-block ml-1"></span>
             </Link>
-          </p>
-          <ul className='inner'>
-            <li className='item'>
-              <Link to='/kr' state={{ loc: loc, theme: '한식' }}>
-                한식
-              </Link>
-            </li>
-            <li className='item'>
-              <Link to='/jp' state={{ loc: loc, theme: '일식' }}>
-                일식
-              </Link>
-            </li>
-            <li className='item'>
-              <Link to='/cn' state={{ loc: loc, theme: '중식' }}>
-                중식
-              </Link>
-            </li>
-          </ul>
-          <ul className='inner'>
-            <li className='item'>
-              <Link to='/meat' state={{ loc: loc, theme: '고기' }}>
-                고기
-              </Link>
-            </li>
-            <li className='item'>
-              <Link to='/chicken' state={{ loc: loc, theme: '치킨' }}>
-                치킨
-              </Link>
-            </li>
-            <li className='item'>
-              <Link to='/pizza' state={{ loc: loc, theme: '피자' }}>
-                피자
-              </Link>
-            </li>
-          </ul>
-          <ul className='inner'>
-            <li className='item'>
-              <Link to='/snack' state={{ loc: loc, theme: '분식' }}>
-                분식
-              </Link>
-            </li>
-            <li className='item'>
-              <Link to='/midnightsnack' state={{ loc: loc, theme: '야식' }}>
-                야식
-              </Link>
-            </li>
-            <li className='item'>
-              <Link to='/ramen' state={{ loc: loc, theme: '라면' }}>
-                라면
-              </Link>
-            </li>
-          </ul>
-        </div>
+          </div>
+        </section>
       )}
     </main>
   );
