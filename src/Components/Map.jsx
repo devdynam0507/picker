@@ -4,13 +4,9 @@ const { kakao } = window;
 
 const MapContainer = ({ curLoc, address, placeName }) => {
   useEffect(() => {
-    console.log(`맵로그: ${curLoc.loc}, ${address}, ${placeName}`);
     const container = document.getElementById('myMap');
     const options = {
-      center: new kakao.maps.LatLng(
-        curLoc.loc.split(' ')[0],
-        curLoc.loc.split(' ')[1]
-      ),
+      center: new kakao.maps.LatLng(curLoc.split(' ')[0], curLoc.split(' ')[1]),
       level: 3,
     };
     // 지도를 생성합니다.
@@ -48,7 +44,7 @@ const MapContainer = ({ curLoc, address, placeName }) => {
         setZoomable();
       }
     });
-  }, [placeName]);
+  }, [address, curLoc, placeName]);
 
   return <div id='myMap' className='w-96 h-96 my-6'></div>;
 };

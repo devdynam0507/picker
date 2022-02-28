@@ -1,5 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Map from '../../Components/Map';
 import './Category.css';
@@ -10,9 +9,9 @@ const { kakao } = window;
 const Category = () => {
   const [menus, setMenus] = useState([]);
   const location = useLocation();
-  const [curLoc, setCurLoc] = useState(location.state);
-  const [result, setResult] = useState(false);
-  const theme = curLoc.theme;
+  const [random, setRandom] = useState(undefined);
+  const curLoc = location.state.loc;
+  const theme = location.state.theme;
 
   // kakao map api 구현
   const places = new kakao.maps.services.Places();
@@ -21,25 +20,32 @@ const Category = () => {
       setMenus(result);
     }
   };
-  // console.log(menus[0].address_name);
-  // console.log(curLoc);
+
   useEffect(() => {
-    if (!location.state.loc) {
+    if (!curLoc) {
       alert('위치정보를 다시 받아와주세요');
       window.location.assign('/');
     }
-    places.keywordSearch(location.state.theme, callback, {
+    places.keywordSearch(theme, callback, {
       location: new kakao.maps.LatLng(
-        curLoc.loc.split(' ')[0],
-        curLoc.loc.split(' ')[1]
+        curLoc.split(' ')[0],
+        curLoc.split(' ')[1]
       ),
       page: 1,
     });
-  }, []);
-  console.log(curLoc);
+  }, [curLoc, theme, places]);
+
   const navHandler = () => {
-    window.location.assign(`https://map.kakao.com/link/to/${menus[0].id}`);
+    window.location.assign(`https://map.kakao.com/link/to/${menus[random].id}`);
   };
+
+  function onPicker() {
+    const min = 0;
+    const max = 15;
+    const num = Math.floor(Math.random() * (max - min + 1) + min);
+
+    return setRandom(num);
+  }
 
   return (
     <main>
@@ -47,11 +53,11 @@ const Category = () => {
         <div className="basis-1/4 bg-[url('../public/img/top-bg1.png')] bg-cover flex justify-center items-center bg-center">
           <img className='w-40' src='img/sub-menu2.png' alt='picker 로고' />
         </div>
-        {result ? (
+        {random ? (
           <Map
             curLoc={curLoc}
-            address={menus[0].address_name}
-            placeName={menus[0].place_name}
+            address={menus[random]?.address_name}
+            placeName={menus[random]?.place_name}
           />
         ) : (
           <Main theme={theme} />
@@ -59,9 +65,7 @@ const Category = () => {
         <div className='basis-1/4'>
           <Button
             text={`내 주변 ${theme}집 찾기`}
-            onClick={() => {
-              setResult(true);
-            }}
+            onClick={onPicker}
             isImg={true}
           />
           <Button text='카카오맵으로 길 찾기' onClick={navHandler} />
