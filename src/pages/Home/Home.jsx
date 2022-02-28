@@ -115,7 +115,7 @@ const Home = () => {
             <ul className='flex gap-3 h-full flex-wrap'>
               <li className=' bg-white flex-30 justify-center items-center flex'>
                 <Link to='/kr' state={{ loc: loc, theme: '한식' }}>
-                  <p className='text-4xl'>🍲</p>
+                  <p className='text-4xl'>🍱</p>
                   한식
                 </Link>
               </li>

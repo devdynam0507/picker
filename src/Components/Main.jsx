@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = ({ theme }) => {
   const menu = {
-    한식: '🍲',
+    한식: '🍱',
     중식: '🥡',
     일식: '🍣',
     고기: '🥩',
