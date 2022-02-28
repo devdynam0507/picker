@@ -2,12 +2,15 @@ import React, { useEffect } from 'react';
 
 const { kakao } = window;
 
-const MapContainer = ({ curLoc, address, placename }) => {
+const MapContainer = ({ curLoc, address, placeName }) => {
   useEffect(() => {
-    // console.log(curLoc, address, placename);
+    console.log(`맵로그: ${curLoc.loc}, ${address}, ${placeName}`);
     const container = document.getElementById('myMap');
     const options = {
-      center: new kakao.maps.LatLng(curLoc.loc.split(' ')[0], curLoc.loc.split(' ')[1]),
+      center: new kakao.maps.LatLng(
+        curLoc.loc.split(' ')[0],
+        curLoc.loc.split(' ')[1]
+      ),
       level: 3,
     };
     // 지도를 생성합니다.
@@ -35,7 +38,7 @@ const MapContainer = ({ curLoc, address, placename }) => {
 
         // 인포윈도우로 장소에 대한 설명을 표시합니다
         var infowindow = new kakao.maps.InfoWindow({
-          content: `<div style="font-size:20px;width:200px;text-align:center;padding:10px 0;">${placename}</div>`,
+          content: `<div style="font-size:20px;width:200px;text-align:center;padding:10px 0;">${placeName}</div>`,
         });
         infowindow.open(map, marker);
 
@@ -45,17 +48,9 @@ const MapContainer = ({ curLoc, address, placename }) => {
         setZoomable();
       }
     });
-  }, [placename]);
+  }, [placeName]);
 
-  return (
-    <div
-      id='myMap'
-      style={{
-        width: '400px',
-        height: '400px',
-      }}
-    ></div>
-  );
+  return <div id='myMap' className='w-96 h-96 my-6'></div>;
 };
 
 export default MapContainer;
