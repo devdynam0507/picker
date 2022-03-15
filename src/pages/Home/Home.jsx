@@ -2,6 +2,8 @@ import axios from 'axios';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link, matchPath } from 'react-router-dom';
+import LoadingBottom from '../../Components/LoadingBottom';
+import LoadingTop from '../../Components/LoadingTop';
 import './Home.css';
 
 const Home = () => {
@@ -10,23 +12,6 @@ const Home = () => {
   const [curList, setCurList] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [randomPick, setRandomPick] = useState({});
-  const textArr = ['NOW', 'OUR', 'DO', 'START', 'YOUR'];
-  const [text, setText] = useState(textArr[0]);
-  let idx = 0;
-  const getText = () => {
-    if (idx === 5) {
-      idx = 0;
-    }
-    setText(textArr[idx]);
-    idx++;
-  };
-
-  useEffect(() => {
-    setInterval(getText, 1000);
-    if (!isLoading) {
-      clearInterval(getText);
-    }
-  }, []);
 
   useEffect(() => {
     const listOfTheme = [
@@ -48,7 +33,6 @@ const Home = () => {
       setNumbVisit(res.data.count);
     });
     axios.get('http://api.picker.run/picker?amountOfData=6').then((res) => {
-      // console.log(res.data);
       setCurList(res.data);
     });
   }, []);
@@ -59,7 +43,6 @@ const Home = () => {
         (position) => {
           const currentPosition =
             position.coords.latitude + ' ' + position.coords.longitude;
-          // console.log(currentPosition);
           setLoading(false);
           setLoc(currentPosition);
         },
@@ -83,27 +66,8 @@ const Home = () => {
     <main>
       {isLoading && (
         <section className='h-full bg-picker-orange flex flex-col'>
-          {/* TOP */}
-          <div className="basis-3/4 flex flex-col items-center justify-center bg-[url('../public/img/intro-circle.png')] bg-contain bg-bottom">
-            <div className='basis-1/2 flex w-full justify-center items-end'>
-              <p className='text-white text-5xl'>{text}</p>
-            </div>
-            <div className='basis-1/2'>
-              <img className='w-44' src='img/logo-fff.png' alt='picker 로고' />
-            </div>
-          </div>
-
-          {/* BOTTOM */}
-          <div className='basis-1/4 text-xl tall:text-2xl pb-9'>
-            <p className='text-white max-w-xs m-auto'>
-              Picker가 <span className='font-extrabold'>{numbVisit}</span>명의
-              고민을 해결해줬어요.
-            </p>
-            <p className='text-white'>
-              원하는 고민거리를 <span className='font-extrabold'>Picker</span>{' '}
-              해드릴게요!
-            </p>
-          </div>
+          <LoadingTop />
+          <LoadingBottom numbVisit={numbVisit} />
         </section>
       )}
       {!isLoading && (
