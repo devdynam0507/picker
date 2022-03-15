@@ -16,6 +16,16 @@ module.exports = {
       flex: {
         30: '1 1 30%',
       },
+      keyframes: {
+        slide: {
+          '100%': {
+            top: '-200px',
+          },
+        },
+      },
+      animation: {
+        slide: 'slide 4.2s steps(5) infinite',
+      },
     },
   },
   plugins: [],
