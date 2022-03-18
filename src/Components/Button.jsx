@@ -4,7 +4,7 @@ const Button = ({ text, onClick, isImg }) => {
   return (
     <button
       type='button'
-      className='bg-picker-yellow p-5 mb-6 rounded-lg text-lg w-full'
+      className='bg-picker-yellow p-5 mb-6 rounded-lg text-lg w-full shadow-md'
       onClick={onClick}
     >
       {text}{' '}

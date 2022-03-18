@@ -173,7 +173,7 @@ const Home = () => {
             <Link
               to={`/${Object.keys(randomPick)[0]}`}
               state={{ loc: loc, theme: Object.values(randomPick)[0] }}
-              className='bg-picker-yellow p-5 mt-6 rounded-lg text-lg flex justify-center items-center w-full'
+              className='bg-picker-yellow p-5 mt-6 rounded-lg text-lg flex justify-center items-center w-full shadow-md'
             >
               메뉴 랜덤{' '}
               <span className="bg-[url('../public/img/logo-1E.png')] w-14 h-5 bg-contain bg-no-repeat align-top inline-block ml-1"></span>
