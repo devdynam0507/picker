@@ -3,8 +3,8 @@ import React from 'react';
 const LoadingTop = () => {
   return (
     <div className="basis-3/4 flex flex-col items-center justify-center bg-[url('../public/img/intro-circle.png')] bg-contain bg-bottom">
-      <div className='basis-1/2 flex w-full justify-center items-end mb-2'>
-        <ul className='text-white text-5xl h-[2.5rem] overflow-hidden'>
+      <div className='flex w-full justify-center items-end mb-2'>
+        <ul className='text-black text-5xl h-[2.5rem] overflow-hidden'>
           <li className='relative top-0 animate-slide h-[2.5rem]'>
             <span>NOW</span>
           </li>
@@ -22,9 +22,10 @@ const LoadingTop = () => {
           </li>
         </ul>
       </div>
-      <div className='basis-1/2'>
-        <img className='w-44' src='img/logo-fff.png' alt='picker 로고' />
+      <div>
+        <img className='w-44' src='img/logo-1E.png' alt='picker 로고' />
       </div>
+      <p className='pt-4 text-lg'>주변 맛집을 찾고 있어요!</p>
     </div>
   );
 };
