@@ -9,7 +9,6 @@ import './Home.css';
 const Home = () => {
   const [loc, setLoc] = useState('');
   const [numbVisit, setNumbVisit] = useState(0);
-  const [curList, setCurList] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [randomPick, setRandomPick] = useState({});
 
@@ -27,13 +26,9 @@ const Home = () => {
     ];
     setRandomPick(listOfTheme[Math.floor(Math.random() * 9)]);
   }, []);
-
   useEffect(() => {
     axios.get('http://api.picker.run/count').then((res) => {
       setNumbVisit(res.data.count);
-    });
-    axios.get('http://api.picker.run/picker?amountOfData=6').then((res) => {
-      setCurList(res.data);
     });
   }, []);
 
@@ -43,7 +38,9 @@ const Home = () => {
         (position) => {
           const currentPosition =
             position.coords.latitude + ' ' + position.coords.longitude;
-          setLoading(false);
+          setTimeout(() => {
+            setLoading(false);
+          }, 1000);
           setLoc(currentPosition);
         },
         (error) => {
@@ -65,7 +62,7 @@ const Home = () => {
   return (
     <main>
       {isLoading && (
-        <section className='h-full bg-picker-orange flex flex-col'>
+        <section className='h-full bg-neutral-100 flex flex-col'>
           <LoadingTop />
           <LoadingBottom numbVisit={numbVisit} />
         </section>
@@ -77,7 +74,7 @@ const Home = () => {
           </div>
           <div className='basis-2/4'>
             <ul className='flex gap-3 h-full flex-wrap'>
-              <li className=' bg-white flex-30 justify-center items-center flex w-full'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/kr'
                   state={{ loc: loc, theme: '한식' }}
@@ -87,7 +84,7 @@ const Home = () => {
                   한식
                 </Link>
               </li>
-              <li className=' bg-white flex-30 justify-center items-center flex'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/cn'
                   state={{ loc: loc, theme: '중식' }}
@@ -97,7 +94,7 @@ const Home = () => {
                   중식
                 </Link>
               </li>
-              <li className=' bg-white flex-30 justify-center items-center flex'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/jp'
                   state={{ loc: loc, theme: '일식' }}
@@ -107,7 +104,7 @@ const Home = () => {
                   일식
                 </Link>
               </li>
-              <li className=' bg-white flex-30 justify-center items-center flex'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/meat'
                   state={{ loc: loc, theme: '고기' }}
@@ -117,7 +114,7 @@ const Home = () => {
                   고기
                 </Link>
               </li>
-              <li className=' bg-white flex-30 justify-center items-center flex'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/chicken'
                   state={{ loc: loc, theme: '치킨' }}
@@ -127,7 +124,7 @@ const Home = () => {
                   치킨
                 </Link>
               </li>
-              <li className=' bg-white flex-30 justify-center items-center flex'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/pizza'
                   state={{ loc: loc, theme: '피자' }}
@@ -137,7 +134,7 @@ const Home = () => {
                   피자
                 </Link>
               </li>
-              <li className=' bg-white flex-30 justify-center items-center flex'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/snack'
                   state={{ loc: loc, theme: '분식' }}
@@ -147,7 +144,7 @@ const Home = () => {
                   분식
                 </Link>
               </li>
-              <li className=' bg-white flex-30 justify-center items-center flex'>
+              <li className=' bg-white flex-30 justify-center items-center flex rounded-lg'>
                 <Link
                   to='/midnightsnack'
                   state={{ loc: loc, theme: '야식' }}
