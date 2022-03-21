@@ -15,7 +15,7 @@ const Main = ({ theme }) => {
 
   return (
     <div className='basis-2/4 bg-white rounded-full flex justify-center items-center flex-col mb-6'>
-      <p className='text-9xl'>{menu[theme]}</p>
+      <p className='text-9xl animate-bounce'>{menu[theme]}</p>
       <div className='text-xl mt-3'>
         <span className='text-picker-orange'>{theme}</span> 맛집을 찾으세요?
       </div>
