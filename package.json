@@ -2,7 +2,7 @@
   "name": "picker-react",
   "version": "0.1.1",
   "private": true,
-  "proxy": "http://api.picker.run",
+  "proxy": "https://mw467ftc5f.execute-api.ap-northeast-2.amazonaws.com/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "axios": "^0.24.0",
