@@ -6,7 +6,6 @@ import LoadingBottom from '../../Components/LoadingBottom';
 import LoadingTop from '../../Components/LoadingTop';
 import './Home.css';
 
-import '../../Utils/CommUtils';
 import { COUNT_API_URL } from '../../Utils/CommUtils';
 
 const Home = () => {
