@@ -6,6 +6,9 @@ import LoadingBottom from '../../Components/LoadingBottom';
 import LoadingTop from '../../Components/LoadingTop';
 import './Home.css';
 
+import '../../Utils/CommUtils';
+import { COUNT_API_URL } from '../../Utils/CommUtils';
+
 const Home = () => {
   const [loc, setLoc] = useState('');
   const [numbVisit, setNumbVisit] = useState(0);
@@ -27,7 +30,7 @@ const Home = () => {
     setRandomPick(listOfTheme[Math.floor(Math.random() * 9)]);
   }, []);
   useEffect(() => {
-    axios.get('http://api.picker.run/count').then((res) => {
+    axios.get(COUNT_API_URL).then((res) => {
       setNumbVisit(res.data.count);
     });
   }, []);
