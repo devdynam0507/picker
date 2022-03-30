@@ -13,10 +13,9 @@ jobs:
 
       # - name: npm install for eslint
       #   run: npm install
-
       - name: npm install
         run: npm install
-        working-directory: ./client
+        # working-directory: ./client
 
       - name: build
         env:
