@@ -60,7 +60,7 @@ const Home = () => {
   };
 
   useEffect(() => getLocation(), []);
-
+  
   return (
     <main>
       {isLoading && (
@@ -82,7 +82,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '한식' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className='text-4xl'>🍱</p>
+                  <img src='food/kr.png' alt='한식' />
                   한식
                 </Link>
               </li>
@@ -92,7 +92,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '중식' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🥡</p>
+                  <img src='food/cn.png' alt='중식' />
                   중식
                 </Link>
               </li>
@@ -102,7 +102,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '일식' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🍣</p>
+                  <img src='food/jp.png' alt='일식' />
                   일식
                 </Link>
               </li>
@@ -112,7 +112,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '고기' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🥩</p>
+                  <img src='food/meat.png' alt='고기' />
                   고기
                 </Link>
               </li>
@@ -122,7 +122,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '치킨' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🍗</p>
+                  <img src='food/chicken.png' alt='치킨' />
                   치킨
                 </Link>
               </li>
@@ -132,7 +132,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '피자' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🍕</p>
+                  <img src='food/pizza.png' alt='피자' />
                   피자
                 </Link>
               </li>
@@ -142,7 +142,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '분식' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🥟</p>
+                  <img src='food/tteokbokki.png' alt='분식' />
                   분식
                 </Link>
               </li>
@@ -152,7 +152,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '야식' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🍔</p>
+                  <img src='food/midnightsnack.png' alt='야식' />
                   야식
                 </Link>
               </li>
@@ -162,7 +162,7 @@ const Home = () => {
                   state={{ loc: loc, theme: '라면' }}
                   className='w-full h-full flex justify-center items-center flex-col'
                 >
-                  <p className=' text-4xl'>🍜</p>
+                  <img src='food/ramen.png' alt='라면' />
                   라면
                 </Link>
               </li>
