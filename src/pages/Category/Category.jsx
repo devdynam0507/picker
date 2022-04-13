@@ -27,13 +27,10 @@ const Category = () => {
       window.location.assign('/');
     }
     places.keywordSearch(theme, callback, {
-      location: new kakao.maps.LatLng(
-        curLoc.split(' ')[0],
-        curLoc.split(' ')[1]
-      ),
+      location: new kakao.maps.LatLng(curLoc.split(' ')[0], curLoc.split(' ')[1]),
       page: 1,
     });
-  }, [curLoc, theme, places]);
+  }, [curLoc, theme]);
 
   const navHandler = () => {
     window.location.assign(`https://map.kakao.com/link/to/${menus[random].id}`);
@@ -53,26 +50,11 @@ const Category = () => {
         <div className="basis-1/4 bg-[url('../public/img/top-bg1.png')] bg-cover flex justify-center items-center bg-center">
           <img className='w-40' src='img/sub-menu2.png' alt='picker 로고' />
         </div>
-        {random ? (
-          <Map
-            curLoc={curLoc}
-            address={menus[random]?.address_name}
-            placeName={menus[random]?.place_name}
-          />
-        ) : (
-          <Main theme={theme} />
-        )}
+        {random ? <Map curLoc={curLoc} address={menus[random]?.address_name} placeName={menus[random]?.place_name} /> : <Main theme={theme} />}
         <div className='basis-1/4'>
-          <Button
-            text={`내 주변 ${theme}집 찾기`}
-            onClick={onPicker}
-            isImg={true}
-          />
+          <Button text={`내 주변 ${theme}집 찾기`} onClick={onPicker} isImg={true} />
           <Button text='카카오맵으로 길 찾기' onClick={navHandler} />
-          <Button
-            text='메뉴 다시 고르기'
-            onClick={() => window.location.assign('/')}
-          />
+          <Button text='메뉴 다시 고르기' onClick={() => window.location.assign('/')} />
         </div>
       </section>
     </main>
