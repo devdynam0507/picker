@@ -18,3 +18,5 @@ master 브랜치에 병합 시 trigger 됩니다.
 https://api.picker.run/
 master 브랜치에 병합하시고 1~2분 정도 기다리시면 변경사항이 적용 됩니다.  
 만약 변경사항이 적용되지 않는다면 감자에게 말해주세요!!
+
+<!-- Security scan triggered at 2026-09-05 07:23:23 -->
